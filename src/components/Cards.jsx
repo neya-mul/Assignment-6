@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { MdVerified } from 'react-icons/md'
+import { toast } from 'react-toastify'
 
 export default function Cards({ card, isBuyed, setIsBuyed }) {
   // console.log(card)
@@ -7,6 +8,7 @@ export default function Cards({ card, isBuyed, setIsBuyed }) {
   const buyButton = ()=>{
     setBuyed(true)
     setIsBuyed([...isBuyed, card])
+    toast(`${card.name} has added to the cart` );
 
   }
   return (
