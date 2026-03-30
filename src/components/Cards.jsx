@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { MdVerified } from 'react-icons/md'
 
-export default function Cards({ card }) {
-  console.log(card)
+export default function Cards({ card, isBuyed, setIsBuyed }) {
+  // console.log(card)
+  const [buyed, setBuyed] = useState(false)
+  const buyButton = ()=>{
+    setBuyed(true)
+    setIsBuyed([...isBuyed, card])
+
+  }
   return (
     <div className='border border-gray-300 rounded-2xl p-10 max-w-[500px] mx-auto space-y-4 '>
 
@@ -20,7 +26,7 @@ export default function Cards({ card }) {
       <p className='flex items-center'> <span className='text-green-500'><MdVerified /></span> {card.features[1]}</p>
       <p className='flex items-center'> <span className='text-green-500'><MdVerified /></span> {card.features[2]}</p>
 
-      <button className='btn w-full btn-primary'> Buy Now</button>
+      <button onClick={buyButton} className='btn w-full btn-primary'> {buyed === true ? 'Purchesed' : 'Buy Now'}</button>
 
     </div>
   )

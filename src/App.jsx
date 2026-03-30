@@ -8,6 +8,7 @@ import Banner from './components/Banner'
 import Rating from './components/Rating'
 import CardContainer from './components/CardContainer'
 
+
 function App() {
   const items = fetch('/data.json')
     .then(res => res.json())
@@ -22,6 +23,7 @@ function App() {
         <CardContainer items={items}></CardContainer>
 
       </Suspense>
+     
 
 
     </>
