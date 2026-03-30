@@ -29,7 +29,7 @@ export default function Cart({ isBuyed, setIsBuyed }) {
                 <span>{totalPrice}</span>
             </div>
             <div>
-                <button onClick={proceed} className='btn w-full'>Proceed to Checkout</button>
+                <button onClick={proceed} className='btn btn-primary rounded-2xl w-full'>Proceed to Checkout</button>
             </div>
         </div>
     )
