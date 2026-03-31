@@ -10,7 +10,8 @@ export default function Cart({ isBuyed, setIsBuyed }) {
 
     const proceed = () => {
         setIsBuyed([])
-        toast.info('All the items had prceded to checkout')
+
+        toast.info(`${isBuyed.length > 0 ? 'All the items had prceded to checkout' : 'No items available '}`)
     }
 
     // console.log(totalPrice)
