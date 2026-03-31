@@ -38,7 +38,7 @@ export default function Started() {
             </div>
             <div className='border border-gray-400 rounded-2xl p-10 mx-auto min-h-[380px]'>
                 <div className='flex justify-end'>
-                    <span className='text-white bg-linear-to-r from-blue-600 to-purple-500 p-3 rounded-full'>01</span>
+                    <span className='text-white bg-linear-to-r from-blue-600 to-purple-500 p-3 rounded-full'>03</span>
                 </div>
                 <div className='text-center p-5'>
                     <img src={rocket} alt=""  className='mx-auto'/>
