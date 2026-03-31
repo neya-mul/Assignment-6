@@ -28,7 +28,7 @@ export default function Cards({ card, isBuyed, setIsBuyed }) {
       <p className='flex items-center'> <span className='text-green-500'><MdVerified /></span> {card.features[1]}</p>
       <p className='flex items-center'> <span className='text-green-500'><MdVerified /></span> {card.features[2]}</p>
 
-      <button onClick={buyButton} className='btn w-full btn-primary'> {buyed === true ? 'Purchesed' : 'Buy Now'}</button>
+      <button onClick={buyButton} className='btn w-full btn-primary'> {buyed === true ? 'Added to cart' : 'Buy Now'}</button>
 
     </div>
   )
