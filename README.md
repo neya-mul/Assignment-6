@@ -1,16 +1,5 @@
-# React + Vite
+The name of this project is "DigiTools Platforms"
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+I have created this project as a part of my web course "AI Powered Future Ready Web Dev" by Programming Hero Batch-13 and it is my assignment 6. This project is like an e-commerce website but no product is sold here. There are some services which I could buy from here.There is a pricing section , there are some cards has shown as a service. Each card has a button and after clicking the button that service will be added to the cart and the total price will be shown there. You can also delete a service from the cart and if you delete any service the price will be decrease.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
-
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To make this project , I used......

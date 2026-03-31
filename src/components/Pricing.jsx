@@ -9,7 +9,7 @@ export default function Pricing() {
                 <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>
             {/* cards */} 
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 my-10'>
                 {/* card */}
                 <div className='bg-gray-100 border border-gray-200 rounded-2xl p-10 space-y-5 min-h-[380px]  '>
                     <div>
@@ -28,7 +28,8 @@ export default function Pricing() {
                     <button className='btn w-full bg-linear-to-r from-blue-600 to bg-purple-400 rounded-2xl text-white'> Get Started Free</button>
                 </div>
 
-                <div className='bg-linear-to-r from-blue-600 to-purple-500 text-white border border-gray-200 rounded-2xl  p-10 space-y-5 min-h-[380px]'>
+                <div className='bg-linear-to-r from-blue-600 to-purple-500 text-white border border-gray-200 rounded-2xl p-10 space-y-5 min-h-[380px] relative'>
+                    <span className='bg-amber-100 p-2 text-amber-600 rounded-2xl absolute -top-[20px] right-55'> Most Popular</span>
                     <div>
                         <h1 className='text-3xl font-bold'>Pro</h1>
                         <p>Best for professionals</p>
