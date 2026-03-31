@@ -7,6 +7,7 @@ import Navbar from './components/Navbar'
 import Banner from './components/Banner'
 import Rating from './components/Rating'
 import CardContainer from './components/CardContainer'
+import Started from './components/Started'
 
 
 function App() {
@@ -23,7 +24,9 @@ function App() {
         <CardContainer items={items}></CardContainer>
 
       </Suspense>
+      <Started></Started>
      
+
 
 
     </>
