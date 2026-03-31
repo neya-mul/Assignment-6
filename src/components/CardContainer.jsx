@@ -3,7 +3,7 @@ import Card from './Cards'
 import Cards from './Cards'
 import Cart from './Cart'
 
-export default function CardContainer({items}) {
+export default function CardContainer({items,isAdded, setIsAdded }) {
     const data = use(items)
     // console.log(datas)
     const [isSelected, setIsSelected] = useState('products')
@@ -23,8 +23,8 @@ export default function CardContainer({items}) {
             <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
                 {
                     isSelected === 'products' ?
-                    data.map(card=> <Cards key={card.id} card={card} isBuyed={isBuyed} setIsBuyed={setIsBuyed}></Cards>)
-                    : <Cart  isBuyed={isBuyed} setIsBuyed={setIsBuyed}></Cart>
+                    data.map(card=> <Cards key={card.id} card={card} isBuyed={isBuyed} setIsBuyed={setIsBuyed}  isAdded={isAdded} setIsAdded={setIsAdded}></Cards>)
+                    : <Cart  isBuyed={isBuyed} setIsBuyed={setIsBuyed}  isAdded={isAdded} setIsAdded={setIsAdded}></Cart>
                 }
                 
             </div>

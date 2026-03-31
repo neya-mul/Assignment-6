@@ -10,22 +10,23 @@ import CardContainer from './components/CardContainer'
 import Started from './components/Started'
 import Pricing from './components/Pricing'
 import Footer from './components/Footer'
-
+const items = fetch('/data.json')
+  .then(res => res.json())
 
 function App() {
-  const items = fetch('/data.json')
-    .then(res => res.json())
+
+  const [isAdded, setIsAdded] = useState([])
 
 
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar isAdded={isAdded} setIsAdded={setIsAdded}></Navbar>
       <Banner></Banner>
       <Rating></Rating>
-      <Suspense>
-        <CardContainer items={items}></CardContainer>
+     
+        <CardContainer items={items} isAdded={isAdded} setIsAdded={setIsAdded}></CardContainer>
 
-      </Suspense>
+      
       <Started></Started>
       <Pricing></Pricing>
 

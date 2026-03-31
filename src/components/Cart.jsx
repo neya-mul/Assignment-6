@@ -2,7 +2,7 @@ import React from 'react'
 import CartCom from './CartCom'
 import { toast } from 'react-toastify'
 
-export default function Cart({ isBuyed, setIsBuyed }) {
+export default function Cart({ isBuyed, setIsBuyed, isAdded, setIsAdded }) {
     isBuyed.map(el => el.name)
     // console.log(el)
 
@@ -10,6 +10,7 @@ export default function Cart({ isBuyed, setIsBuyed }) {
 
     const proceed = () => {
         setIsBuyed([])
+        setIsAdded([])
 
         toast.info(`${isBuyed.length > 0 ? 'All the items had prceded to checkout' : 'No items available '}`)
     }
@@ -22,7 +23,7 @@ export default function Cart({ isBuyed, setIsBuyed }) {
             {isBuyed.length > 0 ? <div className='cards space-y-3'>
 
                 {
-                    isBuyed.map(product => <CartCom product={product} isBuyed={isBuyed} setIsBuyed={setIsBuyed}></CartCom>)
+                    isBuyed.map(product => <CartCom product={product} isBuyed={isBuyed} setIsBuyed={setIsBuyed} isAdded={isAdded} setIsAdded={setIsAdded}></CartCom>)
                 }
             </div>
                 : <div className='text-center'>

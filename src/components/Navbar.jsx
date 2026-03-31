@@ -1,7 +1,9 @@
 
 import { FaCartShopping } from 'react-icons/fa6'
 
-export default function Navbar() {
+export default function Navbar({isAdded, setIsAdded}) {
+    console.log(isAdded);
+    
     return (
         <div className="navbar bg-base-100 shadow-sm">
             <div className="navbar-start">
@@ -34,7 +36,7 @@ export default function Navbar() {
             </div>
             <div className="navbar-end gap-3">
                 <button className='flex items-center'><FaCartShopping />
-                    <span>0</span> </button>
+                    <span>{isAdded.length}</span> </button>
                 <button>Login</button>
                 <a className="btn bg-linear-to-r from-blue-600 to-purple-500 text-white rounded-4xl">Get Started</a>
             </div>

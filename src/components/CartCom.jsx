@@ -1,11 +1,12 @@
 import React from 'react'
 import { toast } from 'react-toastify'
 
-export default function CartCom({ product, isBuyed, setIsBuyed }) {
+export default function CartCom({ product, isBuyed, setIsBuyed, isAdded, setIsAdded }) {
   const deleteButton= (product)=>{
     // console.log(product);
     const filteredProduct = isBuyed.filter(p=> p.name != product.name)
     // console.log(filteredProduct)
+    setIsAdded(filteredProduct)
     setIsBuyed(filteredProduct)
     toast.warn(`${product.name} has removed from the cart`)
     
