@@ -36,7 +36,7 @@ export default function Navbar() {
                 <button className='flex items-center'><FaCartShopping />
                     <span>0</span> </button>
                 <button>Login</button>
-                <a className="btn">Button</a>
+                <a className="btn bg-linear-to-r from-blue-600 to-purple-500 text-white rounded-4xl">Get Started</a>
             </div>
         </div>
     )
