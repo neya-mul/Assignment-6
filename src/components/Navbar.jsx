@@ -2,7 +2,7 @@ import cart from "../images/products/shopping-cart.png"
 import { FaCartShopping } from 'react-icons/fa6'
 
 export default function Navbar({isAdded, setIsAdded}) {
-    console.log(isAdded);
+  
     
     return (
         <div className="navbar bg-base-100 shadow-sm">

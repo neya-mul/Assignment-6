@@ -20,7 +20,7 @@ export default function CardContainer({items,isAdded, setIsAdded }) {
                 </div>
             </div>
 
-            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10'>
+            <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-10 my-10'>
                 {
                     isSelected === 'products' ?
                     data.map(card=> <Cards key={card.id} card={card} isBuyed={isBuyed} setIsBuyed={setIsBuyed}  isAdded={isAdded} setIsAdded={setIsAdded}></Cards>)
