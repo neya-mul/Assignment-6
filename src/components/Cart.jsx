@@ -10,7 +10,7 @@ export default function Cart({ isBuyed, setIsBuyed }) {
 
     const proceed = () => {
         setIsBuyed([])
-        toast('All the items had prceded to checkout')
+        toast.info('All the items had prceded to checkout')
     }
 
     // console.log(totalPrice)
