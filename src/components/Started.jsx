@@ -6,7 +6,7 @@ import rocket from "../images/rocket.png"
 
 export default function Started() {
   return (
-    <div className='space-y-3'>
+    <div className='space-y-3 p-15'>
         <div className='text-center'>
             <h1 className='font-bold text-3xl'>Get Started in 3 Steps</h1>
             <p>Start using premium digital tools in minutes, not hours.</p>
@@ -15,7 +15,7 @@ export default function Started() {
 
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
             {/* card */}
-            <div className='max-w-[500px] border border-gray-400 rounded-2xl p-10 mx-auto minh-[380px]'>
+            <div className='border border-gray-400 rounded-2xl p-10 mx-auto min-h-[380px]'>
                 <div className='flex justify-end'>
                     <span className='text-white bg-linear-to-r from-blue-600 to-purple-500 p-3 rounded-full'>01</span>
                 </div>
@@ -26,7 +26,7 @@ export default function Started() {
                 </div>
             </div>
 
-            <div className='max-w-[500px] border border-gray-400 rounded-2xl p-10 mx-auto minh-[380px]'>
+            <div className='border border-gray-400 rounded-2xl p-10 mx-auto min-h-[380px]'>
                 <div className='flex justify-end'>
                     <span className='text-white bg-linear-to-r from-blue-600 to-purple-500 p-3 rounded-full'>02</span>
                 </div>
@@ -36,7 +36,7 @@ export default function Started() {
                     <p>Browse our catalog and select the tools that fit your needs.</p>
                 </div>
             </div>
-            <div className='max-w-[500px] border border-gray-400 rounded-2xl p-10 mx-auto minh-[380px]'>
+            <div className='border border-gray-400 rounded-2xl p-10 mx-auto min-h-[380px]'>
                 <div className='flex justify-end'>
                     <span className='text-white bg-linear-to-r from-blue-600 to-purple-500 p-3 rounded-full'>01</span>
                 </div>

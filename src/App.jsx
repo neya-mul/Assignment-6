@@ -8,6 +8,7 @@ import Banner from './components/Banner'
 import Rating from './components/Rating'
 import CardContainer from './components/CardContainer'
 import Started from './components/Started'
+import Pricing from './components/Pricing'
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
 
       </Suspense>
       <Started></Started>
+      <Pricing></Pricing>
      
 
 

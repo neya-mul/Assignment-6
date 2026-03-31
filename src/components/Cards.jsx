@@ -12,7 +12,7 @@ export default function Cards({ card, isBuyed, setIsBuyed }) {
 
   }
   return (
-    <div className='border border-gray-300 rounded-2xl p-10 max-w-[500px] mx-auto space-y-4 '>
+    <div className='border border-gray-300 rounded-2xl p-10 max-w-[450px] mx-auto space-y-4 '>
 
       <div className='flex justify-between'>
 
