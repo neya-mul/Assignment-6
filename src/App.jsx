@@ -10,6 +10,7 @@ import CardContainer from './components/CardContainer'
 import Started from './components/Started'
 import Pricing from './components/Pricing'
 import Footer from './components/Footer'
+import Workfolw from './components/Workfolw'
 const items = fetch('/data.json')
   .then(res => res.json())
 
@@ -29,6 +30,7 @@ function App() {
       
       <Started></Started>
       <Pricing></Pricing>
+      <Workfolw></Workfolw>
 
       <Footer></Footer>
 
