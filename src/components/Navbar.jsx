@@ -23,7 +23,7 @@ export default function Navbar({isAdded, setIsAdded}) {
                         {/* <li><a>Item 3</a></li> */}
                     </ul>
                 </div>
-                <a className="text-2xl font-bold bg-linear-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">DigiTools</a>
+                <a className="text-3xl font-bold bg-linear-to-r from-blue-600 to-purple-500 bg-clip-text text-transparent">DigiTools</a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">

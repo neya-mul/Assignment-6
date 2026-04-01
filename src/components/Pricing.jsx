@@ -4,7 +4,7 @@ import { RiVerifiedBadgeFill } from 'react-icons/ri'
 export default function Pricing() {
     return (
         <div className='my-10 space-y-3 p-15'>
-            <div className='text-center'>
+            <div className='text-center my-10'>
                 <h1 className='text-3xl font-bold'>Simple, Transparent Pricing</h1>
                 <p>Choose the plan that fits your needs. Upgrade or downgrade anytime.</p>
             </div>

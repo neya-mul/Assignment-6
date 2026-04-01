@@ -24,7 +24,7 @@ export default function Cards({ card, isBuyed, setIsBuyed, isAdded, setIsAdded }
       </div>
       <h1 className='text-3xl'>{card.name}</h1>
       <p className='min-h-15'>{card.description}</p>
-      <p>{card.price}/month</p>
+      <p className='font-bold'>${card.price}/month</p>
       <p className='flex items-center'> <span className='text-green-500'><MdVerified /></span> {card.features[0]}</p>
       <p className='flex items-center'> <span className='text-green-500'><MdVerified /></span> {card.features[1]}</p>
       <p className='flex items-center'> <span className='text-green-500'><MdVerified /></span> {card.features[2]}</p>

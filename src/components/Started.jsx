@@ -7,7 +7,7 @@ import rocket from "../images/rocket.png"
 export default function Started() {
   return (
     <div className='space-y-3 p-15'>
-        <div className='text-center'>
+        <div className='text-center my-10'>
             <h1 className='font-bold text-3xl'>Get Started in 3 Steps</h1>
             <p>Start using premium digital tools in minutes, not hours.</p>
         </div>
