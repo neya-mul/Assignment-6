@@ -34,7 +34,7 @@ export default function Cart({ isBuyed, setIsBuyed, isAdded, setIsAdded }) {
 
             <div className='flex justify-between'>
                 <span className='text-2xl'>Price</span>
-                <span className='font-bold text-2xl'>{totalPrice}</span>
+                <span className='font-bold text-2xl'>{totalPrice}$</span>
             </div>
             <div>
                 <button onClick={proceed} className='btn btn-primary rounded-2xl w-full'>Proceed to Checkout</button>
